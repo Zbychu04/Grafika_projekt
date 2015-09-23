@@ -4,6 +4,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <vector>
+#include <map>
+#include <fstream>
 
 class ObjParser {
     public:

@@ -26,7 +26,7 @@ void ObjParser::objToTxt(const string aInFilename,
     }
 
     // Open file
-    ifstream objFile(aInFilename.c_str());
+    ifstream objFile(aInFilename.c_str(), ios::in);
 
     if (objFile.fail()) {
         cout << "Error: could not open file <"
@@ -36,12 +36,12 @@ void ObjParser::objToTxt(const string aInFilename,
 
 
     // Extract verts, normals, textures, and faces
-    vector verts, norms, textures;
-    vector faces;
-    map faceHash;
+    vector<int> verts, norms, textures;
+    vector<int> faces;
+    map<string, int> faceHash;
 
-    vector finalVerts, finalNorms, finalTextures;
-    vector finalFaces;
+    vector<int> finalVerts, finalNorms, finalTextures;
+    vector<int> finalFaces;
 
     string line;
     int hashIndex = 0;
@@ -137,7 +137,7 @@ void ObjParser::objToTxt(const string aInFilename,
 
                 // Just stick all the unique values in this hash and give each key a
                 // unique, increasing value
-                map::iterator itr;
+                map<string, int>::iterator itr;
 
                 //
                 // Add key's position to the faces list
@@ -214,7 +214,7 @@ void ObjParser::objToTxt(const string aInFilename,
 
     if (aVerbose) cout << faceHash.size() << " unique vertices found" << endl;
 
-    map::iterator hashItr = faceHash.begin();
+    map<string, int>::iterator hashItr = faceHash.begin();
     int faceCounter = 0;
     while (hashItr != faceHash.end()) {
         string faceHashKey = hashItr->first;
@@ -235,7 +235,7 @@ void ObjParser::objToTxt(const string aInFilename,
         float n1 = (float)0.0f;
         float n2 = (float)0.0f;
 
-        vector vals = ObjParser::explode(faceHashKey, '/');
+        vector<string> vals = ObjParser::explode(faceHashKey, '/');
 
         v0 = (float)verts[(atoi(vals[0].c_str()) - 1) * 3];
         v1 = (float)verts[(atoi(vals[0].c_str()) - 1) * 3 + 1];
@@ -282,7 +282,7 @@ void ObjParser::objToTxt(const string aInFilename,
         hashItr++;
     }
 
-    ofstream out(aOutFilename.c_str());
+    ofstream out(aOutFilename.c_str(), ios::out);
 
     if (out.fail()) {
         cout << "Error: could not create output file " << aOutFilename << endl;
