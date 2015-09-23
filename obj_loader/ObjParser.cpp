@@ -1,7 +1,9 @@
 #include "ObjParser.h"
 
-vector ObjParser::explode(string aStr, char aDelim) {
-    vector res;
+using namespace std;
+
+vector<string> ObjParser::explode(string aStr, char aDelim) {
+    vector<string> res;
     string str = aStr.substr(0, aStr.find(aDelim));
 
     while (str.size() < aStr.size()) {
@@ -18,8 +20,10 @@ vector ObjParser::explode(string aStr, char aDelim) {
 void ObjParser::objToTxt(const string aInFilename,
                          const string aOutFilename,
                          bool aVerbose) {
-    if (aVerbose) cout << "Loading OBJ file <"
-                           << aInFilename << ">" << endl;
+    if (aVerbose) {
+        cout << "Loading OBJ file <"
+             << aInFilename << ">" << endl;
+    }
 
     // Open file
     ifstream objFile(aInFilename.c_str());

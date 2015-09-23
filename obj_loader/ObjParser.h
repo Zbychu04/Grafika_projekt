@@ -1,13 +1,15 @@
 #ifndef OBJPARSER_H
 #define OBJPARSER_H
 
-using namespace std;
+#include <iostream>
+#include <cstdlib>
+#include <vector>
 
 class ObjParser {
     public:
-        static void objToTxt(const string aInFilename,
-                const string aOutFilename,
+        static void objToTxt(const std::string aInFilename,
+                const std::string aOutFilename,
                 bool aVerbose = false);
-        static vector explode(string aStr, char aDelim);
+        static std::vector<std::string> explode(std::string aStr, char aDelim);
 };
 #endif
