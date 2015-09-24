@@ -13,12 +13,12 @@ void displayFrame(void) {
 int main(int argc, char* argv[]) {
         glutInit(&argc, argv);
         glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-        glutInitWindowSize(800,800);
-        glutInitWindowPosition(0,0);
-        glutCreateWindow("Program OpenGL");        
-		glutDisplayFunc(displayFrame);
-		
-		//Tutaj kod inicjuj¹cy
+        glutInitWindowSize(800, 800);
+        glutInitWindowPosition(0, 0);
+        glutCreateWindow("Program OpenGL");
+        glutDisplayFunc(displayFrame);
+
+        //Tutaj kod inicjuj¹cy
 
         glutMainLoop();
         return 0;

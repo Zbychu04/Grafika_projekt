@@ -191,10 +191,10 @@ void ObjParser::objToTxt(const string aInFilename,
     // 3. Fill verts, texts, and norms lists so it can be indexed directly.
     //   Length = hash.size
     //
-    for (int i = 0; i < faceHash.size() * 2; i++)
+    for (unsigned int i = 0; i < faceHash.size() * 2; i++)
         finalTextures.push_back(0.0f);
 
-    for (int i = 0; i < faceHash.size() * 3; i++) {
+    for (unsigned int i = 0; i < faceHash.size() * 3; i++) {
         finalVerts.push_back(0.0f);
         finalNorms.push_back(0.0f);
     }
@@ -215,7 +215,6 @@ void ObjParser::objToTxt(const string aInFilename,
     if (aVerbose) cout << faceHash.size() << " unique vertices found" << endl;
 
     map<string, int>::iterator hashItr = faceHash.begin();
-    int faceCounter = 0;
     while (hashItr != faceHash.end()) {
         string faceHashKey = hashItr->first;
         int faceHashVal = hashItr->second;
