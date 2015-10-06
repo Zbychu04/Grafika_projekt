@@ -1,0 +1,54 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Production's "Riptide"
+#  (a free plugin for Cinema 4D PC & Mac, R7.3 or later)
+#  
+#  Red-i Productions
+#  http://www.skinprops.com
+#  
+#  ==========================================================================
+
+newmtl Cherry
+Ns 50.781250
+d 1.000000
+illum 2
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+map_Kd cherry.jpg
+
+newmtl Black
+Ns 50.781250
+d 1.000000
+illum 2
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+
+newmtl Clock_Glass
+Ns 50.781250
+d 1.000000
+illum 2
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+
+newmtl ClockFace
+Ns 50.781250
+d 1.000000
+illum 2
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+map_Kd ClockFace.png
+
+newmtl gold_06
+Ns 50.781250
+d 1.000000
+illum 2
+Ka 0.000000 0.000000 0.000000
+Kd 0.139500 0.094500 0.045000
+Ks 0.873000 0.756000 0.585000
+map_Kd gold_06C.JPG
+map_Ks gold_06X.JPG
+map_Bump gold_06B.JPG
