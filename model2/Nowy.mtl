@@ -1,0 +1,51 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Black
+Ns 47.058824
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Cherry
+Ns 47.058824
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd D:\2.Studia\semestr 4\Grafika\Nowy folder\model2\cherry.jpg
+
+newmtl ClockFace
+Ns 47.058824
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd D:\2.Studia\semestr 4\Grafika\Nowy folder\model2\ClockFace.png
+
+newmtl Clock_Glass
+Ns 47.058824
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl gold_06
+Ns 47.058824
+Ka 0.000000 0.000000 0.000000
+Kd 0.111600 0.075600 0.036000
+Ks 0.873000 0.756000 0.585000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd D:\2.Studia\semestr 4\Grafika\Nowy folder\model2\gold_06C.JPG
+map_Bump D:\\2.Studia\\semestr 4\\Grafika\\Nowy folder\\model2\\gold_06B.JPG
