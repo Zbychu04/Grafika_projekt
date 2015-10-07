@@ -1,0 +1,33 @@
+#ifndef PENDULUM_CASE_PENDULUM_CASE_BACK_TEX_H
+#define PENDULUM_CASE_PENDULUM_CASE_BACK_TEX_H
+
+int Pendulum_Case_Pendulum_Case_BackVertexCount = 8;
+float Pendulum_Case_Pendulum_Case_BackVertices[] = {
+	6.260448, 20.645473, -5.356479
+	6.260448, 20.645473, -5.106479
+	-6.239552, 20.645473, -5.106479
+	-6.239552, 20.645473, -5.356479
+	6.260448, 52.895473, -5.356472
+	6.260448, 52.895473, -5.106472
+	-6.239552, 52.895473, -5.356472
+	-6.239552, 52.895473, -5.106472
+};
+
+float Pendulum_Case_Pendulum_Case_BackTexCoord[] = {
+	1.000000, 0.000000
+	1.000000, 1.000000
+	0.000000, 1.000000
+	0.000000, 0.000000
+};
+
+float Pendulum_Case_Pendulum_Case_BackNormals[] = {
+	0.000000, -1.000000, 0.000000
+	1.000000, 0.000000, 0.000000
+	0.000000, 1.000000, 0.000000
+	-1.000000, 0.000000, 0.000000
+	0.000000, -0.000000, 1.000000
+	0.000000, 0.000000, -1.000000
+};
+
+
+#endif \\Pendulum_Case_Pendulum_Case_Back
